@@ -179,8 +179,10 @@ optgroup {
   font-weight: bold;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+   border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
 }
 td,
 th {
@@ -1584,13 +1586,10 @@ table th[class*="col-"] {
 }
 @media (max-width: 767px) {
   .table-responsive {
-    width: 100%;
-    margin-bottom: 15.75px;
-    overflow-y: hidden;
-    overflow-x: scroll;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #ecf0f1;
-    -webkit-overflow-scrolling: touch;
+    border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
   }
   .table-responsive > .table {
     margin-bottom: 0;

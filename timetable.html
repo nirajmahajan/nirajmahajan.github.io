@@ -21,6 +21,21 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/usebootstrap.js"></script>
     <script src="js/jquery.js"></script>
+    <style>
+		table {
+		  border-collapse: collapse;
+		  border-spacing: 0;
+		  width: 100%;
+		  border: 1px solid #ddd;
+		}
+
+		th, td {
+		  text-align: left;
+		  padding: 8px;
+		}
+
+		tr:nth-child(even){background-color: #f2f2f2}
+		</style>
 
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -79,10 +94,19 @@
   		text-align: center;
   	}
   	td:hover {
-  		background-color: #F5A77B;
+  		background-color: #ff6666;
   	}
   	.freeslot {
   		background-color: #ffbc82;
+  	}
+  	.food {
+  		background-color: #ffbb99;
+  	}
+  	.selfstudy {
+  		background-color: #F5A77B;
+  	}
+  	.entertainment {
+  		background-color: #ff9999;
   	}
   </style>
 
@@ -93,56 +117,98 @@
 
 	<span class="text-nowrap">
 		<div class="table-responsive">
-			<table class="table table-hover-cells table-bordered" style="text-align: center; overflow: auto; width: 100%">
+			<table class="table table-hover-cells table-bordered" style="text-align: center; overflow-x: auto; width: 100%; table-layout: fixed; display: block;">
 				<thead>
 					<tr>
-						<th colspan='6'>Days</th>
-						<th colspan='6'>8:00 - 9:30</th>
-						<th colspan='6'>9:30 - 11:00</th>
-						<th colspan='6'>11:00 - 12:30</th>
-						<th colspan='6'>12:30 - 14:00</th>
-						<th colspan='6'>14:00 - 15:30</th>
-						<th colspan='6'>15:30 - 17:00</th>
-						<th colspan='6'>17:00 - 18:30</th>
-						<th colspan='6'>18:30 - 20:00</th>
+						<th colspan='1' width="100px">Days</th>
+						<th colspan='1' width="100px">8:00 - 9:00</th>
+						<th colspan='1' width="400px">9:00 - 13:00</th>
+						<th colspan='1' width="100px">13:00 - 14:00</th>
+						<th colspan='1' width="150px">14:00 - 15 30</th>
+						<th colspan='1' width="150px">15:30 - 17:00</th>
+						<th colspan='1' width="150px">17:00 - 18:30</th>
+						<th colspan='1' width="200px">18:30 - 20:30</th>
+						<th colspan='1' width="350px">20:30 - 00:00</th>
+						<th colspan='1' width="50px">00:00 - 00:30</th>
+						
+						<!-- <th colspan='2'>00:00 - 00:30</th> -->
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<th colspan='6'>Monday</th>
-						<td class="freeslot" colspan='34'></th>
-						<td colspan="6">CSE 252A</td>
-						<td class="freeslot" colspan='6'></th>
+						<th colspan='1'>Monday</th>
+						<td class="food" colspan='1'>Breakfast</th>
+						<td class="selfstudy" colspan='1'>CSE 293 Project</td>
+						<td class="food" colspan='1'>Lunch</td>
+						<td colspan='1'>CSE 293</td>
+						<td class="selfstudy" colspan='1'>HW Assignments</td>
+						<td colspan='1'>CSE 252A</td>
+						<td class="food" colspan='1'>Dinner</td>
+						<td class="selfstudy" colspan='1'>Intern Prep</td>
+						<td class="entertainment" colspan='1'>Exercise</td>
 					</tr>
 					<tr>
-						<th colspan='6'>Tuesday</th>
-						<td class="freeslot" colspan='22'></th>
-						<td colspan="6">CSE 291B</td>
-						<td class="freeslot" colspan='18'></th>
+						<th colspan='1'>Tuesday</th>
+						<td class="food" colspan='1'>Breakfast</th>
+						<td class="selfstudy" colspan='1'>CSE 291B Project</td>
+						<td class="food" colspan='1'>Lunch</td>
+						<td colspan='1'>CSE 291B</td>
+						<td class="selfstudy" colspan='2'>HW Assignments</td>
+						<td class="food" colspan='1'>Dinner</td>
+						<td class="selfstudy" colspan='1'>Intern Prep</td>
+						<td class="entertainment" colspan='1'>Exercise</td>
 					</tr>
 					<tr>
-						<th colspan='6'>Wednesday</th>
-						<td class="freeslot" colspan='34'></th>
-						<td colspan="6">CSE 252A</td>
-						<td class="freeslot" colspan='6'></th>
+						<th colspan='1'>Wednesday</th>
+						<td class="food" colspan='1'>Breakfast</th>
+						<td class="selfstudy" colspan='1'>CSE 291B Project</td>
+						<td class="food" colspan='1'>Lunch</td>
+						<td class="selfstudy" colspan='2'>HW Assignments</td>
+						<td colspan='1'>CSE 252A</td>
+						<td class="food" colspan='1'>Dinner</td>
+						<td class="selfstudy" colspan='1'>Intern Prep</td>
+						<td class="entertainment" colspan='1'>Exercise</td>
 					</tr>
 					<tr>
-						<th colspan='6'>Tuesday</th>
-						<td class="freeslot" colspan='22'></th>
-						<td colspan="6">CSE 291B</td>
-						<td class="freeslot" colspan='18'></th>
+						<th colspan='1'>Thursday</th>
+						<td class="food" colspan='1'>Breakfast</th>
+						<td class="selfstudy" colspan='1'>CSE 291B Project</td>
+						<td class="food" colspan='1'>Lunch</td>
+						<td colspan='1'>CSE 291B</td>
+						<td colspan='2'>CSE 291B office hours</td>
+						<td class="food" colspan='1'>Dinner</td>
+						<td class="selfstudy" colspan='1'>Intern Prep</td>
+						<td class="entertainment" colspan='1'>Exercise</td>
 					</tr>
 					<tr>
-						<th colspan='6'>Friday</th>
-						<td class="freeslot" colspan="54"></td>
+						<th colspan='1'>Friday</th>
+						<td class="food" colspan='1'>Breakfast</th>
+						<td class="selfstudy" colspan='1'>CSE 293 Project</td>
+						<td class="food" colspan='1'>Lunch</td>
+						<td class="freeslot" colspan='3'></td>
+						<td class="food" colspan='1'>Dinner</td>
+						<td class="selfstudy" colspan='1'>Intern Prep</td>
+						<td class="entertainment" colspan='1'>Exercise</td>
 					</tr>
 					<tr>
-						<th colspan='6'>Saturday</th>
-						<td class="freeslot" colspan="56"></td>
+						<th colspan='1'>Saturday</th>
+						<td class="food" colspan='1'>Breakfast</th>
+						<td class="selfstudy" colspan='1'>CSE 293 Project</td>
+						<td class="food" colspan='1'>Lunch</td>
+						<td class="freeslot" colspan='3'></td>
+						<td class="food" colspan='1'>Dinner</td>
+						<td class="selfstudy" colspan='1'>Intern Prep</td>
+						<td class="entertainment" colspan='1'>Exercise</td>
 					</tr>
 					<tr>
-						<th colspan='6'>Sunday</th>
-						<td class="freeslot" colspan="56"></td>
+						<th colspan='1'>Sunday</th>
+						<td class="food" colspan='1'>Breakfast</th>
+						<td class="freeslot" colspan='1'></td>
+						<td class="food" colspan='1'>Lunch</td>
+						<td class="freeslot" colspan='3'></td>
+						<td class="food" colspan='1'>Dinner</td>
+						<td class="selfstudy" colspan='1'>Intern Prep</td>
+						<td class="entertainment" colspan='1'>Exercise</td>
 					</tr>
 				</tbody>
 			</table>
